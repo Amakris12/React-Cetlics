@@ -1,0 +1,69 @@
+.roster-Container{
+    margin-top:1rem;
+    width: 100%;
+    height:58rem;
+    background-color:rgba(255, 255, 255, 0.8);
+    box-shadow: $box-shadow;
+    .Roster-title{
+        text-align:center;
+        color: $clr-green-1;
+        font-size:4rem;
+    }
+}
+.roster{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    .roster-card{
+        width:16vw;
+        height:30vh;
+        box-shadow: $box-shadow;
+    }
+    .roster-Image{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        height:14vh;
+        width: 10vw;
+        margin-top: 1rem;
+    }
+    .Roster-Player{
+        margin-top:.5rem;
+        text-align:center;
+        font-size:1.8rem;
+        margin-bottom: .5rem;
+    }
+    .Roster-Info{
+        display:flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        .Roster-height{
+            box-shadow: $box-shadow;
+            width:6vw;
+            text-align: center;
+            height: 3vh;
+            margin-left: 1rem;
+        }
+        .Roster-Wieght{
+            box-shadow: $box-shadow;
+            width:6vw;
+            text-align: center;
+            height: 3vh;
+            margin-right: 1rem;
+        }
+        .Roster-Position{
+            box-shadow: $box-shadow;
+            width:9vw;
+            text-align: center;
+            height: 3vh;
+            margin-left: auto;
+            margin-right:auto;
+            margin-top: 1rem;
+        }
+    }
+}
