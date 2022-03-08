@@ -11,7 +11,7 @@ const Roster = () => {
           {team.map((squad)=>{
               const {id,Name,Position,Height,Wieght,Image} = squad;
               return(
-                <div  key={id}>
+                <div key={id}>
                   <div className="roster-card">
                     <img className="roster-Image" src={Image} alt={Name} />
                     <h2 className="Roster-Player">{Name}</h2>

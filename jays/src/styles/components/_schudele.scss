@@ -1,0 +1,70 @@
+.Celtics-Games {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 40rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  .Games-header {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .Game-Container {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    .Game {
+      width: 20rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      margin: 1.5rem;
+      padding: 1rem;
+    }
+    .Game-Peirod {
+      .Game-Day {
+      }
+      .Game-time {
+      }
+    }
+    .Game-HomeTeam {
+      display: flex;
+      justify-content: flex-start;
+      .Game-HomeImg {
+        height: 4rem;
+        width: 5rem;
+      }
+      .Game-Home {
+        margin-top: 1rem;
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+      .Game-homeScore {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+    }
+    .Game-AwayTeam {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: flex-start;
+      .Game-AwayImg {
+        height: 4rem;
+        width: 5rem;
+      }
+      .Game-Away {
+        margin-top: 1rem;
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+      .Game-awayScore {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
