@@ -7,6 +7,7 @@ import VideoOne from '../Components/VideoOne'
 import Schudele from '../Components/Schudele'
 import ImageTwo from '../Components/ImageTwo'
 import Standings from '../Components/Standings'
+import ImageThree from '../Components/ImageThree'
 const home = () => {
     return (
         <div>
@@ -18,6 +19,8 @@ const home = () => {
             <Schudele/>
             <ImageTwo/>
             <Standings/>
+            <ImageThree/>
+            <Schudele/>
         </div>
     )
 }
