@@ -13,7 +13,7 @@ const Standings = () => {
                return(
                    <div key={id} className="east-Standings">
                        <img className="team-IMG" src={Image} alt={Name} />
-                       <h3 className="team-Name">{Name}</h3>
+                       <h3 className="team-Name">#{id} {Name}</h3>
                        <h5>{Record}</h5>
                    </div>
                )
@@ -26,7 +26,7 @@ const Standings = () => {
                return(
                    <div key={id} className="West-Standings">
                        <img className="team-IMG" src={Image} alt={Name} />
-                       <h3 className="team-Name">{Name}</h3>
+                       <h3 className="team-Name">#{id} {Name}</h3>
                        <h5>{Record}</h5>
                    </div>
                )

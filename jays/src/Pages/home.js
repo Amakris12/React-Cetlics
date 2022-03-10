@@ -8,6 +8,7 @@ import Schudele from '../Components/Schudele'
 import ImageTwo from '../Components/ImageTwo'
 import Standings from '../Components/Standings'
 import ImageThree from '../Components/ImageThree'
+import Championships from '../Components/Championships'
 const home = () => {
     return (
         <div>
@@ -20,7 +21,7 @@ const home = () => {
             <ImageTwo/>
             <Standings/>
             <ImageThree/>
-            <Schudele/>
+            <Championships/>
         </div>
     )
 }
