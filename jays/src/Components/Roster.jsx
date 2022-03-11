@@ -6,7 +6,7 @@ const Roster = () => {
   
   return (
     <div className="roster-Container">
-        <h1 className="Roster-title">Celtics 2022 Roster</h1>
+        <h1 id="Roster" className="Roster-title">Celtics 2022 Roster</h1>
         <div className="roster">
           {team.map((squad)=>{
               const {id,Name,Position,Height,Wieght,Image} = squad;

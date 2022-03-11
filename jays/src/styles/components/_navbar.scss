@@ -1,28 +1,29 @@
 .navbar {
   display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center; 
-    background-color: black;
-    border-bottom: 2px white solid;
-    .icon{
-      height:10rem;
-      width:10rem;
-    }
-    .title{
-      color: white;
-      font-size:3rem;
-    }
-    .nav-link {
-      font-size: 1.3rem;
-      color:rgb(0, 144, 17);
-      text-decoration: none;
-    }
-    .nav-link:hover {
-      font-size: 1.8rem;
-      color:aliceblue;
-    }
-    .nav-link:active {
-      color: rgb(0, 144, 17);
-    }
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  border-bottom: 2px white solid;
+  .icon {
+    height: 6rem;
+    width: 8rem;
   }
+  .title {
+    color: white;
+    font-size: 3rem;
+    margin-left: -3rem;
+  }
+  .nav-link {
+    font-size: 1.3rem;
+    color: rgb(0, 144, 17);
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    font-size: 1.8rem;
+    color: aliceblue;
+  }
+  .nav-link:active {
+    color: rgb(0, 144, 17);
+  }
+}
