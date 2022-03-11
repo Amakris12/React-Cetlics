@@ -23,13 +23,15 @@ summary {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 img,
@@ -51,6 +53,7 @@ blockquote,
 q {
   quotes: none;
 }
+
 blockquote::before, blockquote::after,
 q::before,
 q::after {
@@ -99,19 +102,19 @@ pre {
   word-wrap: break-word;
 }
 
-input [type=radio] {
+input [type="radio"] {
   vertical-align: text-bottom;
 }
 
-input [type=checkbox] {
+input [type="checkbox"] {
   vertical-align: bottom;
 }
 
-.ie7 input [type=checkbox] {
+.ie7 input [type="checkbox"] {
   vertical-align: baseline;
 }
 
-.ie6 input[type=checkbox] {
+.ie6 input[type="checkbox"] {
   vertical-align: text-bottom;
 }
 
@@ -146,15 +149,15 @@ sub {
 
 .clickable,
 label,
-input[type=button],
-input[type=submit],
-input[type=file],
+input[type="button"],
+input[type="submit"],
+input[type="file"],
 button {
   cursor: pointer;
 }
 
 button,
-input[type=button] {
+input[type="button"] {
   width: auto;
   overflow: hidden;
 }
@@ -193,91 +196,85 @@ body {
 /* grey used for paragraphs */
 /* lightest grey - used for outlines */
 /* Other Colors used */
-.head {
-  width: 70vw;
-  height: 20vh;
-  margin-left: auto;
-  margin-right: auto;
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  border-radius: 0.75rem;
-  margin-top: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-.head .title {
-  text-align: left;
-  color: #00530a;
-  font-size: 7rem;
-  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  border-bottom: 2px white solid;
 }
 
-.icon {
+.navbar .icon {
   height: 10rem;
   width: 10rem;
-  position: absolute;
-  top: 1.5rem;
-  left: 2rem;
 }
 
-.navbar {
-  width: 90%;
-  height: 2.7rem;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  background-color: white;
-  border-radius: 0.75rem;
-  margin-top: 1rem;
+.navbar .title {
+  color: white;
+  font-size: 3rem;
 }
-.navbar .navbar-section {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.navbar .navbar-section .nav-link {
-  font-size: 2rem;
-  color: #00530a;
+
+.navbar .nav-link {
+  font-size: 1.3rem;
+  color: #009011;
   text-decoration: none;
 }
-.navbar .navbar-section .nav-link:hover {
-  font-size: 2.5rem;
+
+.navbar .nav-link:hover {
+  font-size: 1.8rem;
+  color: aliceblue;
 }
-.navbar .navbar-section .nav-link:active {
-  color: black;
+
+.navbar .nav-link:active {
+  color: #009011;
 }
 
 .roster-Container {
-  margin-top: 1rem;
   width: 100%;
-  height: 55rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 57rem;
+  background-color: black;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+
 .roster-Container .Roster-title {
   text-align: center;
-  color: #00530a;
+  color: #009011;
   font-size: 4rem;
 }
 
 .roster {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .roster .roster-card {
   width: 16vw;
   height: 30vh;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background-color: #161616;
 }
+
 .roster .roster-Image {
   display: block;
   margin-left: auto;
@@ -286,207 +283,474 @@ body {
   width: 10vw;
   margin-top: 1rem;
 }
+
 .roster .Roster-Player {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   text-align: center;
+  color: white;
   font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
+
 .roster .Roster-Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
 }
+
 .roster .Roster-Info .Roster-height {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   width: 6vw;
   text-align: center;
   height: 3vh;
   margin-left: 1rem;
 }
+
 .roster .Roster-Info .Roster-Wieght {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   width: 6vw;
   text-align: center;
   height: 3vh;
   margin-right: 1rem;
 }
+
 .roster .Roster-Info .Roster-Position {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   width: 9vw;
   text-align: center;
   height: 3vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
+  color: white;
 }
 
-.IMG-Div {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.banner-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 50rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.IMG-Div .ImagesONE {
-  height: 40rem;
-  width: 20rem;
+
+@media screen and (max-width: 800px) {
+  .banner-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner-container .banner {
+    width: 100%;
+    height: 100%;
+  }
 }
-.IMG-Div .jalyn {
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+.banner-container:hover .banner {
+  opacity: 0.5;
 }
-.IMG-Div .tatum {
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
+.banner-container:hover .banner:hover {
+  -webkit-box-shadow: 0px 0px 10px 6px black;
+          box-shadow: 0px 0px 10px 6px black;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1;
+          flex: 4 1;
+  font-size: 20pt;
+  opacity: 1;
 }
-.IMG-Div .smart {
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+.banner-container:hover .banner:hover .banner-name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+}
+
+.banner-container .banner {
+  background: none 50%;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 0 0 black;
+          box-shadow: 0 0 0 0 black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 10pt;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner-container .banner .banner-name {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner-container #Batman-banner {
+  background-image: url(https://w0.peakpx.com/wallpaper/938/341/HD-wallpaper-jaylen-brown-boston-celtics.jpg);
+}
+
+.banner-container #Super-banner {
+  background-image: url(https://pbs.twimg.com/media/E1uLYKkXoAYrGhd?format=jpg&name=4096x4096);
+}
+
+.banner-container #Wonder-banner {
+  background-image: url(https://i.pinimg.com/originals/e3/53/f8/e353f85af8436137c131797ae57be76f.jpg);
+}
+
+.banner-container #Flash-banner {
+  background-image: url(https://www.themarysue.com/wp-content/uploads/2018/12/Aquaman-featured.jpg);
 }
 
 .VideoOne-Container {
   height: 40rem;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .VideoOne-Container .VideoOne {
   width: 50rem;
   height: 30rem;
   border-radius: 0.75rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .Celtics-Games {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #0c0c0c;
   height: 40rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
 .Celtics-Games .Games-header {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
+  color: #009011;
 }
+
 .Celtics-Games .Game-Container {
   width: 100%;
   height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
 }
+
 .Celtics-Games .Game-Container .Game {
   width: 20rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+          box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+  background-color: #202020;
   margin: 1.5rem;
   padding: 1rem;
+  color: white;
 }
+
 .Celtics-Games .Game-Container .Game-HomeTeam {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .Celtics-Games .Game-Container .Game-HomeTeam .Game-HomeImg {
   height: 4rem;
   width: 5rem;
 }
+
 .Celtics-Games .Game-Container .Game-HomeTeam .Game-Home {
   margin-top: 1rem;
   font-size: 2rem;
   margin-left: 1rem;
+  color: white;
 }
+
 .Celtics-Games .Game-Container .Game-HomeTeam .Game-homeScore {
   font-size: 2rem;
   margin-top: 1rem;
   margin-left: 1rem;
+  color: white;
 }
+
 .Celtics-Games .Game-Container .Game-AwayTeam {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .Celtics-Games .Game-Container .Game-AwayTeam .Game-AwayImg {
   height: 4rem;
   width: 5rem;
 }
+
 .Celtics-Games .Game-Container .Game-AwayTeam .Game-Away {
   margin-top: 1rem;
   font-size: 2rem;
   margin-left: 1rem;
+  color: white;
 }
+
 .Celtics-Games .Game-Container .Game-AwayTeam .Game-awayScore {
   font-size: 2rem;
   margin-top: 1rem;
   margin-left: 1rem;
+  color: white;
 }
 
-.ImageTwo {
+.banner-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 50rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.ImageTwo .IMG-Two {
-  height: 40rem;
-  width: 24rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+@media screen and (max-width: 800px) {
+  .banner-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner-container .banner {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.banner-container:hover .banner {
+  opacity: 0.5;
+}
+
+.banner-container:hover .banner:hover {
+  -webkit-box-shadow: 0px 0px 10px 6px black;
+          box-shadow: 0px 0px 10px 6px black;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1;
+          flex: 4 1;
+  font-size: 20pt;
+  opacity: 1;
+}
+
+.banner-container:hover .banner:hover .banner-name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+}
+
+.banner-container .banner {
+  background: none 50%;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 0 0 black;
+          box-shadow: 0 0 0 0 black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 10pt;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner-container .banner .banner-name {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner-container #Batman-banner1 {
+  background-image: url(https://wallpaperaccess.com/full/2011588.png);
+}
+
+.banner-container #Super-banner2 {
+  background-image: url(https://wallpaperaccess.com/full/3867608.jpg);
+}
+
+.banner-container #Wonder-banner3 {
+  background-image: url(https://wallpapercave.com/wp/wp2405240.jpg);
 }
 
 .standings {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   background-color: rgba(255, 255, 255, 0.8);
 }
+
 .standings .Standings-header {
   text-align: center;
   font-size: 2rem;
 }
+
 .standings .east {
   margin: 1rem;
 }
+
 .standings .east .east-Standings {
   width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   margin-top: 5px;
   height: 4rem;
 }
+
 .standings .east .team-IMG {
   width: 5rem;
   height: 3rem;
   margin-left: 1rem;
 }
+
 .standings .east .team-Name {
   width: 20rem;
   text-align: left;
   margin-left: 1rem;
 }
+
 .standings .west {
   margin: 1rem;
   margin-left: 1rem;
 }
+
 .standings .west .West-Standings {
   width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   margin-top: 5px;
   height: 4rem;
 }
+
 .standings .west .team-IMG {
   width: 5rem;
   height: 3rem;
   margin-left: 1rem;
 }
+
 .standings .west .team-Name {
   width: 20rem;
   text-align: left;
@@ -494,42 +758,59 @@ body {
 }
 
 .ImageThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .ImageThree .image-three {
   height: 40rem;
   width: 25rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .Champ-Container {
   width: 100%;
   height: 90rem;
   background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
 .Champ-Container .champs-title {
   text-align: center;
   font-size: 4rem;
 }
+
 .Champ-Container .Card-Holder-Champs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .Champ-Container .Card-Holder-Champs .Champs-Card {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 21rem;
   height: 18rem;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 .Champ-Container .Card-Holder-Champs .Champs-Card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}/*# sourceMappingURL=index.css.map */
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/*# sourceMappingURL=index.css.map */

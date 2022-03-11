@@ -1,29 +1,28 @@
 .navbar {
-  width: 90%;
-  height: 2.7rem;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: $box-shadow;
-  background-color: white;
-  border-radius: 0.75rem;
-  margin-top: 1rem;
-  .navbar-section {
-    display: flex;
+  display: flex;
     justify-content: space-around;
     align-content: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center; 
+    background-color: black;
+    border-bottom: 2px white solid;
+    .icon{
+      height:10rem;
+      width:10rem;
+    }
+    .title{
+      color: white;
+      font-size:3rem;
+    }
     .nav-link {
-      font-size: 2rem;
-      color: $clr-green-1;
+      font-size: 1.3rem;
+      color:rgb(0, 144, 17);
       text-decoration: none;
     }
     .nav-link:hover {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
+      color:aliceblue;
     }
     .nav-link:active {
-      color: black;
+      color: rgb(0, 144, 17);
     }
   }
-}

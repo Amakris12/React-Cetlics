@@ -1,8 +1,8 @@
 .roster-Container{
-    margin-top:1rem;
+    // margin-top:1rem;
     width: 100%;
-    height:55rem;
-    background-color:rgba(255, 255, 255, 0.8);
+    height:57rem;
+    background-color:rgba(0, 0, 0, 1);
     box-shadow: $box-shadow;
     .Roster-title{
         text-align:center;
@@ -22,6 +22,7 @@
         width:16vw;
         height:30vh;
         box-shadow: $box-shadow;
+        background-color:rgb(22, 22, 22);
     }
     .roster-Image{
         display:block;
@@ -34,6 +35,7 @@
     .Roster-Player{
         margin-top:.5rem;
         text-align:center;
+        color: white;
         font-size:1.8rem;
         margin-bottom: .5rem;
     }
@@ -42,6 +44,7 @@
         justify-content:space-between;
         flex-wrap: wrap;
         align-items: center;
+        color: white;
         .Roster-height{
             box-shadow: $box-shadow;
             width:6vw;
@@ -64,6 +67,7 @@
             margin-left: auto;
             margin-right:auto;
             margin-top: 1rem;
+            color: white;
         }
     }
 }

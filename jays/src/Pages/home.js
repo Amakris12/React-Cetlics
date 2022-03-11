@@ -12,7 +12,7 @@ import Championships from '../Components/Championships'
 const home = () => {
     return (
         <div>
-            <Header/>
+            {/* <Header/> */}
             <Navbar/>
             <ImagesOne/>
             <Roster/>
